@@ -1,0 +1,36 @@
+/* ===========================
+   RESPONSIVE BREAKPOINTS...test
+=========================== */
+
+/* ===== Desktop ===== */
+@media screen and (max-width: 1200px) {}
+
+/* ===== Tablet ===== */
+@media screen and (max-width: 992px) {
+
+}
+
+/* ===== Tablet / Large Phone ===== */
+@media screen and (max-width: 768px) {
+
+}
+
+/* ===== Phone ===== */
+@media screen and (max-width: 576px) {
+
+}
+
+/* ===== Small Phone ===== */
+@media screen and (max-width: 480px) {
+
+}
+
+/* ===== Tiny Phone ===== */
+@media screen and (max-width: 375px) {
+
+}
+
+/* ===== Landscape ===== */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+
+}

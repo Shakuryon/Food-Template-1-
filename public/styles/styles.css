@@ -1,0 +1,236 @@
+:root{
+
+--theme-color:#7A2E1F;
+--secondary:#D18A39;
+--accent:#F4D8A8;
+
+--background:#FFF8EF;
+
+--mono-color:#FFFFFF;
+--ohno-color:#2D221B;
+
+--text-light:#5B4A3D;
+
+--button:#B54424;
+--button-hover:#91371D;
+
+--success:#4E7A4D;
+
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: var(--theme-color) whitesmoke;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: whitesmoke;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--theme-color);
+    border-radius: 10px;
+    border: 3px solid whitesmoke;
+  }
+
+/* ==== Fonts ==== */
+h1 {font-family: 'Playfair Display', serif; font-size: 3.4rem}
+h2, h3, h4, h5, h6 {font-family: 'Playfair Display', serif;}
+p, footer {font-family: 'Space Grotesk', sans-serif; font-size: 1.6rem}
+
+/* ==== Background ==== */
+body {
+    background-color: whitesmoke;
+}
+
+/* ==== Misc. ==== */
+hr {
+    width: 10%;
+    border-color: var(--theme-color);
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+
+}
+
+#navbarSection {
+    position: sticky;
+    top: 0;
+    opacity: 0.9;
+    z-index: 10;
+}
+
+#navBarCont {
+    transition: all 0.4s ease;
+}
+
+#navBarCont.scrolled {
+    background-color: var(--ohno-color);
+    border-radius: 0px 0px 150px 150px;
+    padding: 12px 0px;
+    border-width: 5rem;
+    border: 1px solid var(--theme-color);
+}
+
+
+.nav-bar-container {
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+.left-side-container {
+    width: 20%;
+}
+
+.left-side-container .logo {
+    height: 100px;
+    width: 260px;
+    display: flex;
+    align-items: left;
+}
+
+.dropdown svg {
+    transition: transform 0.3s ease;
+}
+
+.dropdown-content {
+    visibility: hidden; 
+    opacity: 0; 
+    position: absolute;
+    background-color: var(--ohno-color);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    padding: 1rem;
+    border-radius: 2px;
+    margin: 1rem 0.1rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-content li {
+    float: none; 
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown:hover svg {
+    transform: rotate(180deg);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+}
+
+.nav-links a {
+    color: var(--mono-color);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 10px 15px;
+    background-color: transparent;
+}
+
+.nav-links a:hover {
+    background-color: var(--accent);
+    border-radius: 2px;
+    overflow: hidden;
+    color: var(--theme-color);
+
+}
+
+.hero-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.527)
+}
+
+.hero-bg-video {
+    position: absolute; 
+    object-fit: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-elements {
+    z-index: 2;
+    color: var(--mono-color);
+    position: relative; 
+    display: flex;
+    line-height: 1.8rem;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.hero-text span, blockquote span{
+    color: var(--theme-color)
+}
+
+/* ==== Custom Buttons ==== */
+.mono-btn {
+    background-color: transparent;
+    border: 1px solid var(--mono-color); 
+    position: relative;
+    width: 270px; 
+    margin: 0 auto;
+    height: 53px; 
+    font-weight: 300;
+    color: var(--mono-color);
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2.4px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.mono-btn:hover {
+    background-color: var(button-hover);
+    border-color: var(button-hover);
+}
