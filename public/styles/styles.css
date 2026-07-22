@@ -1,5 +1,4 @@
 :root{
-
 --theme-color: #B1191A;
 --secondary-color:#FEEC42;
 --accent-color:#F4D8A8;
@@ -294,11 +293,14 @@ hr {
 /* ==== Promo break Section ==== */
 #promoSection {
     position: relative;
-    padding: 4rem 8%;
     margin-top: 2rem;
     background-color: var(--accent-color);
     border-radius: 25px;
     border-top: 0px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
 }
 
 .promo-container {
@@ -324,7 +326,7 @@ hr {
 
 .l-sided-food-img img, .r-sided-food-img img {
     width: 100%; 
-    height: 400px; 
+    height: 600px; 
     object-fit: cover; 
     border-radius: 15px;
     box-shadow:0 15px 35px rgba(0, 0, 0, 0.397);
@@ -361,4 +363,26 @@ hr {
     line-height:1.8;
 
     margin-bottom:2rem;
+}
+
+/* ==== Location/Map Section ==== */
+#locationSection { 
+    margin-top: 2rem; 
+}
+
+location-container {
+    display: flex; 
+    position: relative; 
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    max-width: 1400px;
+    height: 700px;
+    gap: 1rem;
+
+}
+
+#map { 
+    height: 500px; 
+    width: 100%;
 }
