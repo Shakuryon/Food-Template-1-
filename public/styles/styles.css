@@ -1,20 +1,20 @@
 :root{
 
---theme-color:#7A2E1F;
---secondary:#D18A39;
---accent:#F4D8A8;
+--theme-color: #B1191A;
+--secondary-color:#FEEC42;
+--accent-color:#F4D8A8;
 
---background:#FFF8EF;
+--background-color:#FFF8EF;
 
 --mono-color:#FFFFFF;
 --ohno-color:#2D221B;
 
 --text-light:#5B4A3D;
 
---button:#B54424;
---button-hover:#91371D;
+--button-color:#B54424;
+--button-hover-color:#91371D;
 
---success:#4E7A4D;
+--succes-color:#4E7A4D;
 
 }
 
@@ -41,13 +41,13 @@
   }
 
 /* ==== Fonts ==== */
-h1 {font-family: 'Playfair Display', serif; font-size: 3.4rem}
-h2, h3, h4, h5, h6 {font-family: 'Playfair Display', serif;}
-p, footer {font-family: 'Space Grotesk', sans-serif; font-size: 1.6rem}
+h1 {font-family: 'Libre Baskerville', serif; font-size: 3.4rem}
+h2, h3, h4, h5, h6 {font-family: 'Libre Baskerville', serif;}
+p, a, footer {font-family: 'Open Sans', sans-serif; font-size: 1.6rem}
 
 /* ==== Background ==== */
 body {
-    background-color: whitesmoke;
+    background-color: var(--background-color);
 }
 
 /* ==== Misc. ==== */
@@ -146,26 +146,49 @@ hr {
     display: flex;
     gap: 25px;
     padding: 20px;
+    
 }
 
 .nav-links a {
-    color: var(--mono-color);
+    color: var(--ohno-color);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 19px;
+    font-weight: 600;
     transition: color 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding: 10px 15px;
     background-color: transparent;
-}
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
 
-.nav-links a:hover {
-    background-color: var(--accent);
-    border-radius: 2px;
+}
+.nav-links li:nth-child(even) a:hover {
+    transform: scale(1.12) rotate(3deg);
+    background-color: var(--accent-color);
+    border-radius: 5px;
     overflow: hidden;
-    color: var(--theme-color);
 
+    color: var(--theme-color);
 }
+
+.nav-links li:nth-child(odd) a:hover {
+    transform: scale(1.12) rotate(-3deg);
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    overflow: hidden;
+
+    color: var(--theme-color);
+}
+/* .nav-links a:hover {
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    overflow: hidden;
+
+    color: var(--theme-color);
+    transform: scale(1.1) rotate(5deg)
+
+} */
 
 .hero-container {
     display: flex;
@@ -176,7 +199,7 @@ hr {
     align-items: center;
 }
 
-.hero-container::before {
+/* .hero-container::before {
     content: '';
     position: absolute; 
     top: 0;
@@ -184,7 +207,7 @@ hr {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.527)
-}
+} */
 
 .hero-bg-video {
     position: absolute; 
@@ -194,6 +217,17 @@ hr {
     left: 0;
     height: 100%;
     width: 100%;
+}
+
+.hero-img {
+    position: absolute; 
+    object-fit: cover;
+    z-index: -1; 
+    top: 3rem;
+    left: 0; 
+    height: 100%;
+    width: 100%;
+    transform: scale(.8);
 }
 
 .hero-elements {
@@ -231,6 +265,6 @@ hr {
 }
 
 .mono-btn:hover {
-    background-color: var(button-hover);
-    border-color: var(button-hover);
+    background-color: var(--button-hover-color);
+    border-color: var(--button-hover-color);
 }
