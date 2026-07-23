@@ -1,5 +1,4 @@
 :root{
-
 --theme-color: #B1191A;
 --secondary-color:#FEEC42;
 --accent-color:#F4D8A8;
@@ -52,7 +51,7 @@ body {
 
 /* ==== Misc. ==== */
 hr {
-    width: 10%;
+    width: 25%;
     border-color: var(--theme-color);
 }
 
@@ -294,11 +293,14 @@ hr {
 /* ==== Promo break Section ==== */
 #promoSection {
     position: relative;
-    padding: 4rem 8%;
     margin-top: 2rem;
     background-color: var(--accent-color);
     border-radius: 25px;
     border-top: 0px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
 }
 
 .promo-container {
@@ -324,7 +326,7 @@ hr {
 
 .l-sided-food-img img, .r-sided-food-img img {
     width: 100%; 
-    height: 400px; 
+    height: 600px; 
     object-fit: cover; 
     border-radius: 15px;
     box-shadow:0 15px 35px rgba(0, 0, 0, 0.397);
@@ -361,4 +363,79 @@ hr {
     line-height:1.8;
 
     margin-bottom:2rem;
+}
+
+/* ==== Location/Map Section ==== */
+#locationSection { 
+    margin-top: 2rem; 
+}
+
+.location-container {
+    display: flex; 
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    flex-direction: row;
+    height: 700px;
+    padding: 1rem 0rem;
+}
+
+.contact-wrap {
+    flex-direction: column;
+    display: flex;
+    width: 50%; 
+    position: relative;
+    justify-content: left; 
+    align-items: center; 
+}
+
+.cw-address-title {
+    color: var(--ohno-color);
+    font-size: 1.45rem;
+    margin-bottom: 1.1rem; 
+}
+
+.cw-hours {
+    flex-direction: column;
+    display: flex; 
+    justify-content: center;
+}
+
+.hours {
+    flex-direction: column;
+    display: flex; 
+    gap: 0.80rem;
+}
+
+.hours-row, .phone-number {
+    flex-direction: row;
+    display: flex; 
+    justify-content: center;
+}
+
+.hours-row span, .title span {
+    color: var(--theme-color);
+}
+
+.day { 
+    font-weight: 500; 
+}
+
+.time {
+    font-weight: 400; 
+    text-align: right; 
+}
+
+.day, .time {
+    margin: 0.85rem;
+}
+
+.phone-number .title {
+
+}
+
+#map { 
+    height: 500px; 
+    width: 50%;
 }
