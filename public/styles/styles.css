@@ -51,7 +51,7 @@ body {
 
 /* ==== Misc. ==== */
 hr {
-    width: 10%;
+    width: 25%;
     border-color: var(--theme-color);
 }
 
@@ -370,6 +370,7 @@ hr {
     margin-top: 2rem; 
 }
 
+<<<<<<< HEAD
 location-container {
     display: flex; 
     position: relative; 
@@ -379,10 +380,78 @@ location-container {
     max-width: 1400px;
     height: 700px;
     gap: 1rem;
+=======
+.location-container {
+    display: flex; 
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    flex-direction: row;
+    height: 700px;
+    padding: 1rem 0rem;
+}
+
+.contact-wrap {
+    flex-direction: column;
+    display: flex;
+    width: 50%; 
+    position: relative;
+    justify-content: left; 
+    align-items: center; 
+}
+
+.cw-address-title {
+    color: var(--ohno-color);
+    font-size: 1.45rem;
+    margin-bottom: 1.1rem; 
+}
+
+.cw-hours {
+    flex-direction: column;
+    display: flex; 
+    justify-content: center;
+}
+
+.hours {
+    flex-direction: column;
+    display: flex; 
+    gap: 0.80rem;
+}
+
+.hours-row, .phone-number {
+    flex-direction: row;
+    display: flex; 
+    justify-content: center;
+}
+
+.hours-row span, .title span {
+    color: var(--theme-color);
+}
+
+.day { 
+    font-weight: 500; 
+}
+
+.time {
+    font-weight: 400; 
+    text-align: right; 
+}
+
+.day, .time {
+    margin: 0.85rem;
+}
+
+.phone-number .title {
+>>>>>>> 482c0a3 (Finished the Map Section)
 
 }
 
 #map { 
     height: 500px; 
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 50%;
+>>>>>>> 482c0a3 (Finished the Map Section)
 }

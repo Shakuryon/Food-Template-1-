@@ -4,7 +4,12 @@
   "description": "This is my first Food website template for public distribution.",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1"
+=======
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+>>>>>>> 482c0a3 (Finished the Map Section)
   },
   "repository": {
     "type": "git",
@@ -21,5 +26,13 @@
   "dependencies": {
     "dotenv": "^17.4.2",
     "express": "^5.2.1"
+<<<<<<< HEAD
+=======
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^10.0.3",
+    "nodemon": "^3.1.14"
+>>>>>>> 482c0a3 (Finished the Map Section)
   }
 }
