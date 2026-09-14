@@ -608,6 +608,7 @@ li a, li p {
     font-weight: 200;
     transition: all 0.3s ease-in-out;
     display: block; 
+    text-align: start;
 }
 
 li a:hover {
