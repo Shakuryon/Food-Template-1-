@@ -12,7 +12,11 @@
 
 /* ===== Tablet / Large Phone ===== */
 @media screen and (max-width: 768px) {
-
+    .follow-wrap {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
 }
 
 /* ===== Phone ===== */
